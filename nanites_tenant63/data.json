@@ -1,0 +1,38 @@
+{
+  "policies": [
+    {
+      "meta": {"version": "0.5"},
+      "actions": [{"request": { "scheme": "http", "method": "GET", "path": "/api/Flow"}}],
+      "subject": {
+        "members": [
+          "jane.doe@tenant63.com"
+        ]
+      }
+    },
+    {
+      "meta": {"version": "0.5"},
+      "actions": [{"request": { "scheme": "https", "method": "GET", "path": "/sales"}}],
+      "subject": {
+        "members": [
+          "john.doe@tenant63.com"
+        ]
+      },
+      "object": {
+        "resource_id": "aResourceId"
+      }
+    },
+    {
+      "meta": {"version": "0.5"},
+      "actions": [{"request": { "scheme": "http", "method": "GET", "path": "/Auth/Test"}}],
+      "subject": {
+        "members": [
+          "allauthenticated",
+          "jane.doe@tenant63.com"
+        ]
+      },
+      "object": {
+        "resource_id": "aResourceId"
+      }
+    }
+  ]
+}
